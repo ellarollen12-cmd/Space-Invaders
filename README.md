@@ -33,8 +33,10 @@ This is a **weekly commit project** where features and improvements are added in
 
 ### 🏆 Existing Systems Still Included
 - Secure login and registration flow with password hashing.
+- Redesigned pilot dashboard with one-click access to the all-time leaderboard.
 - High-score leaderboard filtered to the best score per player.
 - Persistent database-backed score saving and personal best tracking.
+- Press **Escape** during a run to pause, adjust sound-effect volume, toggle mobile controls, resume, or return to the dashboard. Volume and mobile-control settings are saved.
 <<<<<<< HEAD
 - Retro UI styling, glowing panels, and an animated galaxy backdrop.
 =======
@@ -46,9 +48,9 @@ This is a **weekly commit project** where features and improvements are added in
 ## Previous Updates
 
 ### Week 3 — Bug Fixes & Refinement
-- **Ship Color Tinting**: Converted base image to grayscale at load time to allow correct color multiplication for all choices (Green, Blue, Red, Yellow, Purple).
+- **Player Ship**: Uses the transparent `assets/myship_transparent.png` cutout, based on `assets/myship.jpg`, in gameplay and on the login screen.
 - **Enemy Movement**: Enemies dive to player's current position instead of their position 60 frames ago.
-- **Profile Screen Clean Up**: Hid unfinished difficulty selector and matched color swatches with actual ship colors.
+- **Profile Screen Clean Up**: Removed ship color selection; profile settings focus on controls and difficulty.
 - **Name Input Box**: Handled select-all (Ctrl+A), Ctrl+Backspace, and Ctrl+V copy-paste.
 
 ### Week 2 — Player Profiles & Leaderboards
@@ -58,7 +60,7 @@ This is a **weekly commit project** where features and improvements are added in
 
 ## Database Schema
 
-The game uses a local MySQL database named `space_invader_db` with the following schema:
+The game uses a local MySQL database named `space_invader_db_Rollen` with the following schema:
 
 ```sql
 CREATE TABLE IF NOT EXISTS players (
